@@ -2,21 +2,66 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/orange"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/wellnessIcon"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/wellness_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPhysical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Physical"
+        app:layout_constraintStart_toStartOf="@+id/buttonMental"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMental" />
+
+    <Button
+        android:id="@+id/buttonMental"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Mental"
+        app:layout_constraintStart_toStartOf="@+id/domainSelectText"
+        app:layout_constraintTop_toBottomOf="@+id/domainSelectText" />
+
+    <Button
+        android:id="@+id/buttonEmotional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Emotional"
+        app:layout_constraintStart_toStartOf="@+id/buttonPhysical"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPhysical" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="45dp"
+        android:text="@string/hey_user"
+        android:textSize="50sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/domainSelectText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/domain_select"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/welcomeText"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
