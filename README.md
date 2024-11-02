@@ -9,7 +9,7 @@ Our app is meant to be a general purpose wellness app that aids students with th
 
 DIRECTORY BREAKDOWN
 -------------------
-src - source code
+src - source code\n
   main
    java > ui - fragment and activity java files/folders
    res - resources
