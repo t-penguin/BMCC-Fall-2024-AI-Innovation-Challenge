@@ -9,13 +9,13 @@ Our app is meant to be a general purpose wellness app that aids students with th
 
 DIRECTORY BREAKDOWN
 -------------------
-> src - source code
-  > main
-    > java > ui - fragment and activity java files/folders
-    > res - resources
-      > drawable - images and icons
-      > layout - fragment and activity xml files
-      > values - global values
+src - source code
+  main
+   java > ui - fragment and activity java files/folders
+   res - resources
+     drawable - images and icons
+     layout - fragment and activity xml files
+     values - global values
 
 LIBRARIES USED
 -------------------
